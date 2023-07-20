@@ -84,11 +84,11 @@ namespace Google.Android.Libraries.Play.Games.Inputmapping
 
         public override sealed AndroidJavaObject Invoke(global::System.String methodName, global::System.Object[] args)
         {
-        if (methodName == "onProvideInputMap" && args.Length == 0)
-        {
-        return Google.LibraryWrapper.Java.Utils.ToAndroidJavaObject(OnProvideInputMap());
-        }
-        return base.Invoke(methodName, args);
+            if (methodName == "onProvideInputMap" && args.Length == 0)
+            {
+                return Google.LibraryWrapper.Java.Utils.ToAndroidJavaObject(OnProvideInputMap());
+            }
+            return base.Invoke(methodName, args);
         }
     } // end class InputMappingProviderCallbackHelper
 } // end namespace Google.Android.Libraries.Play.Games.Inputmapping

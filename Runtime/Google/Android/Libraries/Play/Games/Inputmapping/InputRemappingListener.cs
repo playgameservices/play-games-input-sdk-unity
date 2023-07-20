@@ -84,12 +84,12 @@ namespace Google.Android.Libraries.Play.Games.Inputmapping
 
         public override sealed AndroidJavaObject Invoke(global::System.String methodName, global::System.Object[] args)
         {
-        if (methodName == "onInputMapChanged" && args.Length == 1)
-        {
-        OnInputMapChanged(new global::Google.Android.Libraries.Play.Games.Inputmapping.Datamodel.InputMap(((AndroidJavaObject) args[0]).GetRawObject()));
-        return null;
-        }
-        return base.Invoke(methodName, args);
+            if (methodName == "onInputMapChanged" && args.Length == 1)
+            {
+                OnInputMapChanged(new global::Google.Android.Libraries.Play.Games.Inputmapping.Datamodel.InputMap(((AndroidJavaObject) args[0]).GetRawObject()));
+                return null;
+            }
+            return base.Invoke(methodName, args);
         }
     } // end class InputRemappingListenerCallbackHelper
 } // end namespace Google.Android.Libraries.Play.Games.Inputmapping

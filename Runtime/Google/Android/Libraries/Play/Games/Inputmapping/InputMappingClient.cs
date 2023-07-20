@@ -164,32 +164,32 @@ namespace Google.Android.Libraries.Play.Games.Inputmapping
 
         public override sealed AndroidJavaObject Invoke(global::System.String methodName, global::System.Object[] args)
         {
-        if (methodName == "setInputMappingProvider" && args.Length == 1)
-        {
-        SetInputMappingProvider(new global::Google.Android.Libraries.Play.Games.Inputmapping.InputMappingProviderAnonymousImplementation(((AndroidJavaObject) args[0]).GetRawObject()));
-        return null;
-        }
-        else if (methodName == "clearInputMappingProvider" && args.Length == 0)
-        {
-        ClearInputMappingProvider();
-        return null;
-        }
-        else if (methodName == "setInputContext" && args.Length == 1)
-        {
-        SetInputContext(new global::Google.Android.Libraries.Play.Games.Inputmapping.Datamodel.InputContext(((AndroidJavaObject) args[0]).GetRawObject()));
-        return null;
-        }
-        else if (methodName == "registerRemappingListener" && args.Length == 1)
-        {
-        RegisterRemappingListener(new global::Google.Android.Libraries.Play.Games.Inputmapping.InputRemappingListenerAnonymousImplementation(((AndroidJavaObject) args[0]).GetRawObject()));
-        return null;
-        }
-        else if (methodName == "clearRemappingListener" && args.Length == 0)
-        {
-        ClearRemappingListener();
-        return null;
-        }
-        return base.Invoke(methodName, args);
+            if (methodName == "setInputMappingProvider" && args.Length == 1)
+            {
+                SetInputMappingProvider(new global::Google.Android.Libraries.Play.Games.Inputmapping.InputMappingProviderAnonymousImplementation(((AndroidJavaObject) args[0]).GetRawObject()));
+                return null;
+            }
+            else if (methodName == "clearInputMappingProvider" && args.Length == 0)
+            {
+                ClearInputMappingProvider();
+                return null;
+            }
+            else if (methodName == "setInputContext" && args.Length == 1)
+            {
+                SetInputContext(new global::Google.Android.Libraries.Play.Games.Inputmapping.Datamodel.InputContext(((AndroidJavaObject) args[0]).GetRawObject()));
+                return null;
+            }
+            else if (methodName == "registerRemappingListener" && args.Length == 1)
+            {
+                RegisterRemappingListener(new global::Google.Android.Libraries.Play.Games.Inputmapping.InputRemappingListenerAnonymousImplementation(((AndroidJavaObject) args[0]).GetRawObject()));
+                return null;
+            }
+            else if (methodName == "clearRemappingListener" && args.Length == 0)
+            {
+                ClearRemappingListener();
+                return null;
+            }
+            return base.Invoke(methodName, args);
         }
     } // end class InputMappingClientCallbackHelper
 } // end namespace Google.Android.Libraries.Play.Games.Inputmapping
